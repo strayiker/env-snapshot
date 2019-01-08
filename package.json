@@ -1,6 +1,6 @@
 {
   "name": "@sadbox/env-snapshot",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A tool for creating a copy of env variables.",
   "main": "lib/index.js",
   "author": "Kirill Mesnyankin <sadbox.games@gmail.com>",
