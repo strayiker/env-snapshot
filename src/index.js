@@ -2,13 +2,13 @@ import 'dotenv/config';
 import camelCase from 'camelcase';
 
 export function takeEnvSnapshot() {
-  return Object.keys(process.env).reduce((settings, key) => {
+  return Object.keys(process.env).reduce((env, key) => {
     const prop = {
-      value: settings[key],
+      value: process.env[key],
       writable: false,
     };
 
-    return Object.defineProperties(this, {
+    return Object.defineProperties(env, {
       [camelCase(key)]: prop,
       [key]: prop,
     });
