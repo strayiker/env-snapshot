@@ -1,0 +1,46 @@
+{
+  "name": "@sadbox/env-snapshot",
+  "version": "0.1.0",
+  "description": "A tool for creating a copy of env variables.",
+  "main": "lib/index.js",
+  "author": "Kirill Mesnyankin <sadbox.games@gmail.com>",
+  "license": "MIT",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strayiker/env-snapshot.git"
+  },
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "babel ./src -d ./lib",
+    "lint": "eslint src",
+    "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "camelcase": "^5.0.0",
+    "dotenv": "^6.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "eslint": "^5.11.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^1.2.1",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
