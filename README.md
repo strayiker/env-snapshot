@@ -1,7 +1,7 @@
 [![Version](https://badgen.net/npm/v/@sadbox/env-snapshot)](https://www.npmjs.com/package/@sadbox/env-snapshot)
 [![License](https://badgen.net/npm/license/@sadbox/env-snapshot)](https://www.npmjs.com/package/@sadbox/env-snapshot)
 [![Dependencies](https://badgen.net/david/dep/strayiker/env-snapshot)](https://www.npmjs.com/package/@sadbox/env-snapshot)
-[![Build Status](https://travis-ci.com/strayiker/env-snapshot.svg?branch=master)](https://travis-ci.com/strayiker/env-snapshot)
+[![Build Status](https://travis-ci.org/strayiker/env-snapshot.svg?branch=master)](https://travis-ci.org/strayiker/env-snapshot)
 
 # Env Snapshot
 
