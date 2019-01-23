@@ -5,6 +5,7 @@ export function takeEnvSnapshot() {
   return Object.keys(process.env).reduce((env, key) => {
     const prop = {
       value: process.env[key],
+      enumerable: true,
       writable: false,
     };
 
